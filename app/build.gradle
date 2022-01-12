@@ -1,0 +1,17 @@
+plugins {
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+application {
+    mainClass = 'jpyint.Main'
+}
+
+jar {
+    manifest {
+        attributes("Main-Class": "jpyint.Main")
+    }
+}
